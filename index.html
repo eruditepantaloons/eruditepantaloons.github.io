@@ -4,6 +4,12 @@
   <title></title>
 
   <link href="bootstrap.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Exo:400,800,900|Asap:400,700|Raleway:300,400,700|Amaranth:400,700|Lemon|Bevan' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400|Gilda+Display|Armata|Rosario|Buda:300|Telex' rel='stylesheet' type='text/css'>
 
   <style>
   /*----- general -----*/
@@ -39,13 +45,13 @@
   /*----- services -----*/
   .services {
     background-color: #FFF;
-    padding: 80px 10px;
+    padding-top: 40px;
+    padding-bottom: 80px;
     background-image: url(section-bg.png);
   }
   .services img {
     text-align: center;
     position: relative;
-    margin-left: 25%;
   }
   .services .container {
     max-width: 1300px;
@@ -56,13 +62,31 @@
       padding: 30px 10px;
     }
   }
+  .services h1 {
+    color: #2e0e0a;
+    text-align: center;
+    width: 100%;
+    font-size: 42px;
+    padding-bottom: 30px;
+    font-family: 'PT Sans', sans serif;
+    font-weight: 900;
+  }
+  .service {
+    text-align: center;
+  }
+  .service h3 {
+    font-family: 'Exo', sans serif;
+  }
+  .service p {
+    font-family: 'Raleway', serif;
+  }
 
   /*----- wayfinder -----*/
   .row.project.wayfinder {
     background-image: url(2.jpg);
     background-repeat: no-repeat;
     background-position: 100% 100%;   
-    padding-top: 100px;
+    padding-top: 60px;
     color: #FFF;
   }
   .wayfinder .col-sm-12 {
@@ -73,7 +97,21 @@
   }
   .wayfinder h3 {
     text-align: center;
-
+    font-family: 'Amaranth', serif;
+    font-size: 40px;
+    font-weight: 400;
+  }
+  .wayfinder p {
+    text-align: center;
+    font-family: 'Raleway', serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 23px;
+    margin-top: 23px;
+  }
+  .word-done img {
+    width: 50px;
+    height: 50px;
   }
 
     /* CUSTOMIZE THE CAROUSEL
@@ -107,7 +145,7 @@
     margin: 0 auto;
     height: 381px;
     margin-top: 80px;
-    left: 79px;
+    left: 78px;
   }
   @media screen and (min-width: 768px) {
     .carousel-indicators {
@@ -180,18 +218,49 @@
     background-image: url(1.jpg);
     background-repeat: no-repeat;
     background-position: 0% 37%;   
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 60px;
+    padding-bottom: 50px;
     color: #fff;
     background-size: cover;
     }    
   .row.project.bite img {
       width: 100%;
   }
+  .bite h3 {
+    text-align: center;
+    font-family: 'Oswald', serif;
+    font-size: 40px;
+    font-weight: 400;
+    color: #010927;
+  }
+  .bite p {
+    text-align: center;
+    font-family: 'Dosis', serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 23px;
+    margin-top: 23px;
+  }
 
   /*----- bio -----*/
   .bio {
-    background-color: #FFF;
+    background-image: url(section-bg.png);
+  }
+  .bio h1 {
+    color: #2e0e0a;
+    text-align: center;
+    width: 100%;
+    font-size: 42px;
+    padding-bottom: 30px;
+  }
+    @media screen and (max-width: 768px) {
+    .bio-person {
+      border-bottom: 1px solid #ececec;
+      padding: 30px 10px;
+    }
+  }
+  .profile img {
+    width: 100px;
   }
   
   
@@ -211,6 +280,7 @@
 <div id="main">
   <div class="row services">
     <div class="container">
+      <h1> Services </h1>
       <div class="col-sm-4 service mobile">
         <img src="Mobile.svg" />
         <h3>Mobile</h3>
@@ -235,6 +305,11 @@
         <h3>Wayfinder HK</h3>
         <p>A quick and easy way to find essential public facilities for tourists in Hong Kong. Requiring no typing, the app instantly highlights nearby facilities and how to get there. The app also allows users to easily ask for directions in the local language.</p>
       </div>
+
+    <!--<div class="word-done">
+      <div class="col-sm-4 col-sm-offset-4"> <img src="Mobiledesign.svg" />App design </div>
+      <div class="col-sm-4"> <img src="Mobileapp.svg" /> App development </div>
+    </div>-->
 
     <div class="col-sm-12">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -272,29 +347,38 @@
 
   <div class="row project bite">
     <div class="container">
-      <div class="col-sm-6">
-        <img src="Devices3.png" />
-      </div>
-      <div class="col-sm-6 project-description">
+
+      <div class="col-sm-8 col-sm-offset-2 project-description">
         <h3>Bite Magazine</h3>
         <p>Bite is a monthly magazine that features works from talented photographers and trendsetting fashion from youth all over the world.</p>
         <p>The new Bite magazine website brings the publication's modern aesthetic to the web. The responsive and highly visual design maintains the immersive full page experience of the print magazine, while allowing for multiple screen sizes.</p>
       </div>
+
+      <div class="col-sm-8 col-sm-offset-2">
+        <img src="Devices3.png" />
+      </div>
+
     </div>
   </div>
 
   <div class="row bio">
     <div class="container">
       <div class="col-sm-12">
-        <h2>Who we are</h2>
+        <h1>Who we are</h1>
       </div>
-      <div class="col-sm-6 bio-person">
+
+      <div class="col-sm-1 col-sm-offset-1 profile">
         <img src="Kanna.jpg" />
+      </div>
+      <div class="col-sm-4 bio-person">
         <h3>Kannan</h3>
         <p>Web and mobile developer based out of Hong Kong. Kannan has been building websites and mobile apps for a few years. He believes in building prototypes rapidly and getting feedback. While not a designer, he has an eye for clean design.</p>
       </div>
-      <div class="col-sm-6 bio-person">
+
+      <div class="col-sm-1 profile">
         <img src="Lakshmi.jpg" />
+      </div>
+      <div class="col-sm-4 bio-person">
         <h3>Lakshmi</h3>
         <p>Designer and developer based out of Singapore. Lakshmi's been designing in print and on the web for many years, and has been increasingly focused on applications that are simple yet valuable. She believes in getting out of photoshop and into code as soon as possible, and code up a mean website. Lakshmi doesn't care much for Kannan's "eye for clean design" and thinks he should stop writing the site's copy.</p>
       </div>
