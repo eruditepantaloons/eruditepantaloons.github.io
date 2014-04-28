@@ -4,64 +4,277 @@
   <title></title>
 
   <link href="bootstrap.css" rel="stylesheet" type="text/css">
+
+  <style>
+  /*----- general -----*/
+  .container {
+    width: 85%;
+  }
+  #main {
+    margin-top: 360px; 
+  }
+
+  /*----- jumbotron -----*/
+  .jumbotron {
+    background-image: url(pattern.jpg);
+    background-repeat: repeat;
+    padding-top: 48px;
+    padding-bottom: 48px; 
+    position: fixed;
+    width: 100%;
+    z-index: -1;  
+    margin-top: -360px;  
+    margin-bottom: 0px;
+  }
+  .logo {
+    width: 200px;
+    margin-left: 40%;
+  }
+  .jumbotron h1 {
+    color: #2e0e0a;
+    text-align: center;
+    width: 100%;
+  }
+
+  /*----- services -----*/
+  .services {
+    background-color: #FFF;
+    padding: 80px 10px;
+    background-image: url(section-bg.png);
+  }
+  .services img {
+    text-align: center;
+    position: relative;
+    margin-left: 25%;
+  }
+  .services .container {
+    max-width: 1300px;
+  }
+  @media screen and (max-width: 768px) {
+    .service {
+      border-bottom: 1px solid #ececec;
+      padding: 30px 10px;
+    }
+  }
+
+  /*----- wayfinder -----*/
+  .row.project.wayfinder {
+    background-image: url(2.jpg);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;   
+    padding-top: 100px;
+    color: #FFF;
+  }
+  .wayfinder .col-sm-12 {
+    background: url('iPhone.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+  }
+
+    /* CUSTOMIZE THE CAROUSEL
+  -------------------------------------------------- */
+
+  /* Carousel base class */
+  .carousel {
+    height: 500px;
+    margin-bottom: 60px;
+  }
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+    z-index: 10;
+  }
+
+  /* Declare heights because of positioning of img element */
+  .carousel .item {
+    height: 500px;
+    background-color: #777;
+  }
+  .carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 381px;
+  }
+  .carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 215px;
+    margin: 0 auto;
+    height: 381px;
+    margin-top: 80px;
+    left: 79px;
+  }
+
+  /* RESPONSIVE CSS
+  -------------------------------------------------- */
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .featurette-heading {
+      margin-top: 120px;
+    }
+  }
+    #myCarousel h1 {
+      font-size: 36px;
+      margin: 0 auto;
+      text-align: center;
+      position: absolute;
+      z-index: 90;
+      color: #fff;
+      top: 40%;
+      /* left: 50%; */
+      width: 100%;
+    }
+
+    .carousel-control.right {
+      background-image: none;
+    }
+    .carousel-control.left {
+      background-image: none;
+    }
+
+
+  /*----- bite -----*/
+  .row.project.bite {
+    background-image: url(1.jpg);
+    background-repeat: no-repeat;
+    background-position: 0% 37%;   
+    padding-top: 150px;
+    padding-bottom: 150px;
+    color: #fff;
+    background-size: cover;
+    }    
+  .row.project.bite img {
+      width: 100%;
+  }
+
+  /*----- bio -----*/
+  .bio {
+    background-color: #FFF;
+  }
+  
+  
+
+  </style>
 </head>
 <body>
 
 <div class="jumbotron">
   <div class="wrapper">
+    <img src="logo.svg" class="logo" />
     <h1>Erudite Pantaloons</h1>
     <!-- <p>Smarty pants... smarter.</p> -->
   </div>
 </div>
 
-<div id="main" class="container">
+<div id="main">
   <div class="row services">
-    <div class="col-sm-4 service">
-      <h3>Mobile</h3>
-      <p>We can help you get your mobile app off the ground quickly with rapid prototypes and cross platform development. We build apps that delight and surprise our users.</p>
-    </div>
-    <div class="col-sm-4 service">
-      <h3>Web</h3>
-      <p>We build engaging websites that scale responsively across all screen sizes. We integrate with Wordpress or a CMS of your choice so that you can take ownership of your site's content.</p>
-    </div>
-    <div class="col-sm-4 service">
-      <h3>Design</h3>
-      <p>We work with you to craft the perfect user experience, and create a custom look and interface to match your brand. We can also produce marketing collateral such as business cards. If you are early in your brand journey, we can help you with finding your own brand identity and voice.</p>
-    </div>
-  </div>
-  <div class="row project">
-    <div class="col-sm-6 project-description">
-      <h3>Wayfinder HK</h3>
-      <p>A quick and easy way to find essential public facilities for tourists in Hong Kong. Requiring no typing, the app instantly highlights nearby facilities and how to get there. The app also allows users to easily ask for directions in the local language.
-</p>
+    <div class="container">
+      <div class="col-sm-4 service mobile">
+        <img src="Mobile.svg" />
+        <h3>Mobile</h3>
+        <p>We can help you get your mobile app off the ground quickly with rapid prototypes and cross platform development. We build apps that delight and surprise our users.</p>
+      </div>
+      <div class="col-sm-4 service web">
+        <img src="Web.svg" />
+        <h3>Web</h3>
+        <p>We build engaging websites that scale responsively across all screen sizes. We integrate with Wordpress or a CMS of your choice so that you can take ownership of your site's content.</p>
+      </div>
+      <div class="col-sm-4 service design">
+        <img src="Design.svg" />
+        <h3>Design</h3>
+        <p>We work with you to craft the perfect user experience, and create a custom look and interface to match your brand. We can also produce marketing collateral such as business cards. If you are early in your brand journey, we can help you with finding your own brand identity and voice.</p>
+      </div>
     </div>
   </div>
-  <div class="row project">
-    <div class="col-sm-6 col-sm-offset-6 project-description">
-      <h3>Bite Magazine</h3>
-      <p>Bite is a monthly magazine that features works from talented photographers and trendsetting fashion from youth all over the world.</p>
-      <p>The new Bite magazine website brings the publication's modern aesthetic to the web. The responsive and highly visual design maintains the immersive full page experience of the print magazine, while allowing for multiple screen sizes.</p>
-    </div>
-  </div>
-  <div class="row bio">
+
+  <div class="row project wayfinder">
+    <div class="container">
+      <div class="col-sm-6 project-description">
+        <h3>Wayfinder HK</h3>
+        <p>A quick and easy way to find essential public facilities for tourists in Hong Kong. Requiring no typing, the app instantly highlights nearby facilities and how to get there. The app also allows users to easily ask for directions in the local language.</p>
+      </div>
+
     <div class="col-sm-12">
-      <h2>Who we are</h2>
-    </div>
-    <div class="col-sm-6 bio-person">
-      <h3>Kannan</h3>
-      <p>Web and mobile developer based out of Hong Kong. Kannan has been building websites and mobile apps for a few years. He believes in building prototypes rapidly and getting feedback. While not a designer, he has an eye for clean design.</p>
-    </div>
-    <div class="col-sm-6 bio-person">
-      <h3>Lakshmi</h3>
-      <p>Designer and developer based out of Singapore. Lakshmi's been designing in print and on the web for many years, and has been increasingly focused on applications that are simple yet valuable. She believes in getting out of photoshop and into code as soon as possible, and code up a mean website. Lakshmi doesn't care much for Kannan's "eye for clean design" and thinks he should stop writing the site's copy.</p>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+        <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="Wayfinder1.png" />
+          <div class="container">
+          </div>
+        </div>
+        <div class="item">
+          <img src="Wayfinder2.png" />
+          <div class="container">
+          </div>
+        </div>
+        <div class="item">
+          <img src="Wayfinder3.png">
+          <div class="container">
+          </div>
+        </div>
+      </div>
+      <!--<a class="left carousel-control" href="http://getbootstrap.com/examples/carousel/#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="http://getbootstrap.com/examples/carousel/#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>-->
     </div>
   </div>
+
+
+    </div>
+  </div>
+
+  <div class="row project bite">
+    <div class="container">
+      <div class="col-sm-6">
+        <img src="Devices3.png" />
+      </div>
+      <div class="col-sm-6 project-description">
+        <h3>Bite Magazine</h3>
+        <p>Bite is a monthly magazine that features works from talented photographers and trendsetting fashion from youth all over the world.</p>
+        <p>The new Bite magazine website brings the publication's modern aesthetic to the web. The responsive and highly visual design maintains the immersive full page experience of the print magazine, while allowing for multiple screen sizes.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row bio">
+    <div class="container">
+      <div class="col-sm-12">
+        <h2>Who we are</h2>
+      </div>
+      <div class="col-sm-6 bio-person">
+        <img src="Kanna.jpg" />
+        <h3>Kannan</h3>
+        <p>Web and mobile developer based out of Hong Kong. Kannan has been building websites and mobile apps for a few years. He believes in building prototypes rapidly and getting feedback. While not a designer, he has an eye for clean design.</p>
+      </div>
+      <div class="col-sm-6 bio-person">
+        <img src="Lakshmi.jpg" />
+        <h3>Lakshmi</h3>
+        <p>Designer and developer based out of Singapore. Lakshmi's been designing in print and on the web for many years, and has been increasingly focused on applications that are simple yet valuable. She believes in getting out of photoshop and into code as soon as possible, and code up a mean website. Lakshmi doesn't care much for Kannan's "eye for clean design" and thinks he should stop writing the site's copy.</p>
+      </div>
+    </div>
+  </div>
+
   <div class="row contact-us">
-    <h2>Contact us</h2>  
+    <div class="container">
+      <h2>Contact us</h2>  
+    </div>
   </div>
 </div>
 
 
-<script src="bootstrap.min.js"></script>    
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="docs.min.js"></script>
 </body>
 </html>
