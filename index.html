@@ -71,6 +71,10 @@
     background-repeat: no-repeat;
     background-position: 50% 0%;
   }
+  .wayfinder h3 {
+    text-align: center;
+
+  }
 
     /* CUSTOMIZE THE CAROUSEL
   -------------------------------------------------- */
@@ -95,7 +99,6 @@
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 381px;
   }
   .carousel-inner {
     position: relative;
@@ -106,6 +109,39 @@
     margin-top: 80px;
     left: 79px;
   }
+  @media screen and (min-width: 768px) {
+    .carousel-indicators {
+    bottom: -20px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .carousel-inner {
+      position: relative;
+      overflow: hidden;
+      width: 169px;
+      margin: 0 auto;
+      height: 361px;
+      margin-top: 80px;
+      left: 61px;
+      padding-top: 62px;
+      }
+    .carousel {
+      height: 500px;
+      margin-bottom: 0px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+      .carousel-inner {
+      position: relative;
+      overflow: hidden;
+      width: 149px;
+      margin: 0 auto;
+      height: 321px;
+      margin-top: 80px;
+      left: 55px;
+      padding-top: 55px;
+      }
+    }
 
   /* RESPONSIVE CSS
   -------------------------------------------------- */
@@ -195,7 +231,7 @@
 
   <div class="row project wayfinder">
     <div class="container">
-      <div class="col-sm-6 project-description">
+      <div class="col-sm-8 col-sm-offset-2 project-description">
         <h3>Wayfinder HK</h3>
         <p>A quick and easy way to find essential public facilities for tourists in Hong Kong. Requiring no typing, the app instantly highlights nearby facilities and how to get there. The app also allows users to easily ask for directions in the local language.</p>
       </div>
