@@ -170,16 +170,23 @@
   }
   @media screen and (max-width: 480px) {
       .carousel-inner {
-      position: relative;
-      overflow: hidden;
-      width: 149px;
-      margin: 0 auto;
-      height: 321px;
-      margin-top: 80px;
-      left: 55px;
-      padding-top: 55px;
+        position: relative;
+        overflow: hidden;
+        width: 138px;
+        margin: 0 auto;
+        height: 294px;
+        margin-top: 80px;
+        left: 50px;
+        padding-top: 51px;
+        }
+      .wayfinder .col-sm-12 {
+        width: 320px;
       }
-    }
+      .carousel {
+        height: 408px;
+      }
+  }
+
 
   /* RESPONSIVE CSS
   -------------------------------------------------- */
@@ -231,7 +238,9 @@
     font-family: 'Oswald', serif;
     font-size: 40px;
     font-weight: 400;
-    color: #010927;
+    color: #FFF;
+    text-shadow: 0 3px 3px rgba(0,0,0,0.8);
+
   }
   .bite p {
     text-align: center;
@@ -240,7 +249,9 @@
     font-weight: 400;
     margin-bottom: 23px;
     margin-top: 23px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.8);
   }
+
 
   /*----- bio -----*/
   .bio {
@@ -266,6 +277,15 @@
   
 
   </style>
+  <script> 
+
+  $(document).ready(function(){
+    $('#myCarousel').carousel({
+      interval: 1000,
+      pause: "hover"
+    });
+  });
+  </script>
 </head>
 <body>
 
